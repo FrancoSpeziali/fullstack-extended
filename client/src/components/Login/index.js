@@ -1,38 +1,22 @@
-import { Button, Container, TextField } from '@material-ui/core';
-
 export default function Login() {
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-  };
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+    };
 
-  return (
-      <Container component="main" maxWidth="xs">
-        <h1>Login</h1>
-        <form onSubmit={handleSubmit}>
-            <TextField
-                variant="outlined"
-                margin="normal"
-                required
-                fullWidth
-                id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
-                autoFocus
-            />
-            <TextField
-                variant="outlined"
-                margin="normal"
-                required
-                fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="password"
-                autoComplete="current-password"
-            />
-          <Button type="submit" variant="contained" color="primary">Login</Button>
-        </form>
-      </Container>
-  );
+    return (
+        <>
+            <h1>Login</h1>
+            <form onSubmit={handleSubmit}>
+                <label>
+                    E-mail
+                    <input type="email" autoComplete="email" name="email" required/>
+                </label>
+                <label>
+                    Password
+                    <input type="password" autoComplete="current-password" name="password" required/>
+                </label>
+                <button type="submit">Login</button>
+            </form>
+        </>
+    );
 }

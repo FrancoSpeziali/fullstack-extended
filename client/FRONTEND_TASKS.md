@@ -2,8 +2,6 @@
 
 The frontend is stored in the `/client` folder
 
-The frontend already includes the library [Material UI](https://material-ui.com/)
-
 ## Preparation
 
 Before writing our code, we should install our dependencies
@@ -60,7 +58,7 @@ Update the Register component so that when the form is submitted:
 
 > **Hint 1**: You could use `fetch` but `axios` might be easier
 
-> **Hint 2**: If you use `axios`, don't forget to install it first!
+> **Hint 2**: If you prefer to use `axios`, don't forget to install it first!
 
 > **Hint 3**: For redirection, you can use the `useHistory` hook from `react-router-dom`
 
@@ -76,26 +74,30 @@ Update the Login component so that when the form is submitted:
 - if login is successful, the JWT token returned from the server is stored in the localStorage
 - if login is successful, the user is redirected to another page
 
-## Task 6 - Creating a Navigation - Public
+## Further Tasks for consideration
 
-Create a navigation component which will be visible to users who are NOT logged into the website
+Use the following information to structure the rest of your application. Consider these components as building blocks.
 
-> **Hint**: You could use `react-router-dom` or the styles components from [Material UI](https://material-ui.com/components/links/)
+### Navigation
 
-## Task 7 - Creating a Navigation - Private
-
-Create a navigation component which will be visible to users who ARE logged into the website
-
-> **Hint**: You could use `react-router-dom` or the styles components from [Material UI](https://material-ui.com/components/links/)
-
-## Task 8 - Navigation Viewing and Switching
+1. Create a navigation component which will be visible to users who are NOT logged into the website
+2. Create a navigation component which will be visible to users who ARE logged into the website
 
 Update your application so that the correct navigation shows when the user is either logged in or not
 
-## Task 9 - Logout
+### Logout
 
-## Task 10 - Viewing messages
+Create a component that removes the JWT token from localStorage, and causes the application to switch state from logged in to logged out
 
-## Task 11 - Creating messages
+### Viewing messages
 
-## Task 12 - Deleting messages
+1. Create a component which allows users to view all messages from the server, based on category
+2. Create a component which allows users to view an individual message from the server
+
+### Creating messages
+
+Create a component which allows a user to create a message
+
+### Deleting messages
+
+Create a component which allows a user to delete a message

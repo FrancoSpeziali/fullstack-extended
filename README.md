@@ -1,8 +1,10 @@
 # Fullstack Messageboard
 
+![Chat messages](https://media.giphy.com/media/llVIK4GDgY34nQULnB/giphy.gif)
+
 This assignment combines both frontend and backend, but with a focus on the backend
 
-!! Insert description here !!
+You will be building a fullstack application which serves as an online messageboard. Features of this application include a full REST API, with user data stored in a MongoDB server. Users should be able to register, login, view, create, update and delete posts.
 
 > Important! You will be expected to use most or all of the knowledge you acquired during the backend module
 
@@ -32,7 +34,8 @@ The purpose of these tasks is to create a REST API which will serve the frontend
 
 This REST API will do the following:
 
-- allow users to view posts
+- allow users to view all posts
+- allow users to view a single post
 - allow users to register
 - allow users to login
 - allow users to create a new post
@@ -49,5 +52,15 @@ The REST API will use authentication and authorisation to validate users. You wi
 2. Complete [Part 2 - Authentication / Authorisation](server/BACKEND_TASKS_2.md)
 
 ### Frontend
+
+For the frontend, it is largely up to you how present the information to the user. You should be thinking in terms of "what features would my users want?"
+
+The tasks are largely non-specific and should be viewed as a guide to help you structure your application. Completing this tasks on their own will not provide you a fully functioning frontend application.
+
+This is your chance to be creative!
+
+Good luck!
+
+#### Frontend Tasks
 
 Complete the [Frontend Tasks](./client/FRONTEND_TASKS.md)

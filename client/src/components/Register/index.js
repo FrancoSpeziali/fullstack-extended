@@ -1,49 +1,30 @@
-import { Button, Container, TextField } from '@material-ui/core';
-
 export default function Register() {
-  const handleSubmit = async (event) => {
-    event.preventDefault();
-  };
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+    };
 
-  return (
-      <Container component="main" maxWidth="xs">
-        <h1>Register</h1>
-        <form onSubmit={handleSubmit}>
-            <TextField
-                variant="outlined"
-                margin="normal"
-                required
-                fullWidth
-                id="firstname"
-                label="First Name"
-                name="firstname"
-                autoComplete="firstname"
-                autoFocus
-            />
-            <TextField
-                variant="outlined"
-                margin="normal"
-                required
-                fullWidth
-                id="lastname"
-                label="Last Name"
-                name="lastname"
-                autoComplete="lastname"
-                autoFocus
-            />
-            <TextField
-                variant="outlined"
-                margin="normal"
-                required
-                fullWidth
-                name="password"
-                label="Password"
-                type="password"
-                id="password"
-                autoComplete="current-password"
-            />
-          <Button type="submit" variant="contained" color="primary">Register</Button>
-        </form>
-      </Container>
-  );
+    return (
+        <>
+            <h1>Register</h1>
+            <form onSubmit={handleSubmit}>
+                <label>
+                    First name
+                    <input type="text" autoComplete="firstname" name="firstname" required/>
+                </label>
+                <label>
+                    Last name
+                    <input type="text" autoComplete="lastname" name="lastname" required/>
+                </label>
+                <label>
+                    E-mail
+                    <input type="email" autoComplete="email" name="email" required/>
+                </label>
+                <label>
+                    Password
+                    <input type="password" autoComplete="new-password" name="password" required/>
+                </label>
+                <button type="submit">Register</button>
+            </form>
+        </>
+    );
 }
